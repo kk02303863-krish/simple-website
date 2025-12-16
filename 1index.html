@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Sweet and Shop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #fffaf3; color: #333; }header {
+  background: #8b0000;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 { font-size: 24px; }
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover { text-decoration: underline; }
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1601050690597-df0568f70950') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  background: rgba(0,0,0,0.6);
+  padding: 15px 25px;
+  border-radius: 8px;
+}
+
+section { padding: 40px 30px; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #8b0000;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.menu-item h3 { margin-bottom: 10px; }
+
+.menu-item button {
+  background: #8b0000;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item button:hover { background: #a00000; }
+
+.about, .contact {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+footer {
+  background: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+  </style>
+</head>
+<body>  <header>
+    <h1>Krishna Sweet and Shop</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <div class="hero" id="home">
+    <h2>Pure Sweets & Delicious Snacks Since 1995</h2>
+  </div>  <section id="menu">
+    <h2 class="section-title">Our Special Menu</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>Gulab Jamun</h3>
+        <p>Soft & juicy traditional sweet</p>
+        <button onclick="order('Gulab Jamun')">Order</button>
+      </div>
+      <div class="menu-item">
+        <h3>Rasgulla</h3>
+        <p>Fresh & spongy Bengali sweet</p>
+        <button onclick="order('Rasgulla')">Order</button>
+      </div>
+      <div class="menu-item">
+        <h3>Kaju Katli</h3>
+        <p>Premium cashew sweet</p>
+        <button onclick="order('Kaju Katli')">Order</button>
+      </div>
+      <div class="menu-item">
+        <h3>Samosa</h3>
+        <p>Crispy & spicy snack</p>
+        <button onclick="order('Samosa')">Order</button>
+      </div>
+    </div>
+  </section>  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="about">
+      <p>
+        Krishna Sweet and Shop is a family-owned sweet shop serving fresh, hygienic
+        and delicious sweets and snacks for over 25 years. Our mission is to provide
+        quality taste with traditional recipes.
+      </p>
+    </div>
+  </section>  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact">
+      <p><strong>Address:</strong> Main Market Road, India</p>
+      <p><strong>Phone:</strong> +91 6362361064</p>
+      <p><strong>Opening Hours:</strong> 8:00 AM – 10:00 PM</p>
+    </div>
+  </section>  <footer>
+    <p>© 2025 Krishna Sweet and Shop. All Rights Reserved.</p>
+  </footer>  <!-- WhatsApp Floating Button --><a href="https://wa.me/919876543210?text=Hello%20Krishna%20Sweet%20and%20Shop%2C%20I%20want%20to%20place%20an%20order" 
+class="whatsapp-float" target="_blank">💬</a>
+
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      font-size: 28px;
+      padding: 12px 16px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .whatsapp-float:hover { background: #1ebe5d; }
+  </style>  <script>
+
+</body>
+</html>
